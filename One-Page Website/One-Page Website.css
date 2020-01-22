@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    font-size: 20;
+}
+
+.input1 {
+    border:dashed orange;
+    border-radius: 7%;
+    border-width: 2px;
+    margin-bottom: 15px;
+    width: 147px;
+    padding: 5px;
+}
+
+.input2 {
+    border:dashed orange;
+    border-radius: 7%;
+    border-width: 2px;
+    margin-bottom: 15px;
+    width: 147px;
+    padding: 5px;
+}
+
+.input3 {
+    border:dashed orange;
+    border-radius: 7%;
+    border-width: 2px;
+    margin-bottom: 15px;
+    width: 147px;
+    padding: 5px;
+}
