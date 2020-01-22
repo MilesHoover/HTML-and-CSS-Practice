@@ -1,0 +1,65 @@
+.navbar {
+    overflow: hidden;
+    background-color: sandybrown;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.navbar a:hover {
+    background: white;
+    color: black;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%);
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.centered {
+position: absolute;
+top: 37%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-weight: 900;
+font-size: large;
+}
+
+table {
+    position: absolute;
+    top: 47%;
+    left: 32%;
+    border: 1px solid black;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.toprow {
+    background-color: sandybrown;
+}
+
+.footer {
+    font-weight: 900;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
