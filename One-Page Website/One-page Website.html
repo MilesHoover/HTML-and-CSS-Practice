@@ -31,17 +31,70 @@
 		</div>
 		<!--header section END-->
 
-		<!--pictures section-->
-		<div>
-			<h3 id="pictures"><u>Cats you can adopt:</u></h3>
+		<!-- Images used to open the lightbox-->
+		<h3 id="pictures"><u>Cats you can adopt:</u></h3>
+		<div class="row">
+			<div class="column">
 			<img src="https://preview.redd.it/oamjdnibbsa41.jpg?width=640&crop=smart&auto=webp&s=b849e575de97767ef6b46fa4288f7a96d6b608cc"
-				alt="Siamese Cat"><br>
+				onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Siamese Cat"><br>
+			</div>
+			<div class="column">
 			<img src="https://preview.redd.it/tqxtngdnena41.jpg?width=640&crop=smart&auto=webp&s=95ef0e65259f6433868afb3ce462e645703b69df"
-				alt="Orange Cat"><br>
+				onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Orange Cat"><br>
+			</div>
+			<div class="column">
 			<img src="https://preview.redd.it/tlrr1ln5sra41.jpg?width=960&crop=smart&auto=webp&s=00e5762b50b40ec7e8c1447b7cb3260f498c3007"
-				alt="Snowy Cat"><br>
+				onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Snowy Cat"><br>
+			</div>
 		</div>
 		<!--pictures section END-->
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext"1 / 4</div></div>
+					<img src="https://preview.redd.it/oamjdnibbsa41.jpg?width=640&crop=smart&auto=webp&s=b849e575de97767ef6b46fa4288f7a96d6b608cc"
+					style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext"1 / 4</div></div>
+					<img src="https://preview.redd.it/tqxtngdnena41.jpg?width=640&crop=smart&auto=webp&s=95ef0e65259f6433868afb3ce462e645703b69df"
+					style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext"1 / 4</div></div>
+					<img src="https://preview.redd.it/tlrr1ln5sra41.jpg?width=960&crop=smart&auto=webp&s=00e5762b50b40ec7e8c1447b7cb3260f498c3007"
+					style="width:100%">
+				</div>
+
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095</a>
+
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!-- Thumbnail image controls-->
+				<div class="column">
+					<img class="demo" src="https://preview.redd.it/oamjdnibbsa41.jpg?width=640&crop=smart&auto=webp&s=b849e575de97767ef6b46fa4288f7a96d6b608cc" onclick="currentSlide(1)" alt="siamese cat">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="https://preview.redd.it/tqxtngdnena41.jpg?width=640&crop=smart&auto=webp&s=95ef0e65259f6433868afb3ce462e645703b69df" onclick="currentSlide(2)" alt="Orange cat">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="https://preview.redd.it/tqxtngdnena41.jpg?width=640&crop=smart&auto=webp&s=95ef0e65259f6433868afb3ce462e645703b69df" onclick="currentSlide(3)" alt="Snowy cat">
+				</div>
+			</div>
+		</div>
 
 		<!--videos section-->
 		<div>
@@ -91,5 +144,5 @@
 		</div>
 
 	</body>
-
+	<script src="JS/one_page_website.js"></script>
 	</html>
